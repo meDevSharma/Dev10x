@@ -9,51 +9,75 @@ document.addEventListener('DOMContentLoaded', function() {
     initHeroAnimations();
 });
 
-// Modern Mobile Navigation
+// Modern Mobile Navigation with Enhanced Animations
 function initMobileNavigation() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     const body = document.body;
+    let isAnimating = false;
+
+    function openMenu() {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        hamburger.classList.add('active');
+        navMenu.classList.remove('mobile-closing');
+        navMenu.classList.add('mobile-active');
+        body.style.overflow = 'hidden';
+        
+        setTimeout(() => {
+            isAnimating = false;
+        }, 600);
+    }
+    
+    function closeMenu() {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        hamburger.classList.remove('active');
+        navMenu.classList.add('mobile-closing');
+        
+        setTimeout(() => {
+            navMenu.classList.remove('mobile-active', 'mobile-closing');
+            body.style.overflow = '';
+            isAnimating = false;
+        }, 500);
+    }
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function(e) {
             e.stopPropagation();
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('mobile-active');
             
-            // Prevent body scroll when menu is open
             if (navMenu.classList.contains('mobile-active')) {
-                body.style.overflow = 'hidden';
+                closeMenu();
             } else {
-                body.style.overflow = '';
+                openMenu();
             }
         });
 
         // Close mobile menu when clicking on a link
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('mobile-active');
-                body.style.overflow = '';
+                if (navMenu.classList.contains('mobile-active')) {
+                    closeMenu();
+                }
             });
         });
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(e) {
             if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('mobile-active');
-                body.style.overflow = '';
+                if (navMenu.classList.contains('mobile-active')) {
+                    closeMenu();
+                }
             }
         });
 
         // Close menu on escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && navMenu.classList.contains('mobile-active')) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('mobile-active');
-                body.style.overflow = '';
+                closeMenu();
             }
         });
     }
