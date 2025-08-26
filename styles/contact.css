@@ -769,12 +769,8 @@
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
-    }
-    
-    .primary-contact {
-        grid-column: 1 / -1;
-        max-width: 600px;
-        margin: 0 auto;
+        max-width: 800px;
+        margin: 2rem auto 0;
     }
     
     .form-row {
@@ -800,12 +796,9 @@
     }
     
     .contact-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .primary-contact {
-        grid-column: 1;
-        max-width: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        max-width: 900px;
     }
     
     .contact-form {

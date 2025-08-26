@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dev10x - Devinder Sharma | Zero Investment Business Model</title>
     <meta name="description" content="Learn about Devinder Sharma and Dev10x's mission to help people build successful businesses with zero investment through high-quality wellness products.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +30,7 @@
                     <a href="blog.html" class="nav-link">Blog</a>
                 </li>
             </ul>
-            <a href="index.html#whatsapp-contact" class="work-with-us-btn">Work With Us</a>
+            <a href="#whatsapp-contact" class="work-with-us-btn">Work With Us</a>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -230,26 +230,87 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="about-cta">
+    <!-- Success CTA Section -->
+    <section id="whatsapp-contact" class="success-cta">
         <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2 class="cta-title">Ready to Start Your Journey?</h2>
-                <p class="cta-subtitle">
-                    Join thousands of successful entrepreneurs who have transformed their lives with Dev10x. 
-                    Your success story starts with a simple conversation.
+            <div class="success-hero">
+                <div class="success-badge" data-aos="zoom-in">
+                    <i class="fas fa-crown"></i>
+                    <span>Your Success Awaits</span>
+                </div>
+                
+                <h2 class="success-title" data-aos="fade-up" data-aos-delay="200">
+                    <span class="title-line">Transform Your Life</span>
+                    <span class="title-highlight">One Conversation at a Time</span>
+                </h2>
+                
+                <p class="success-description" data-aos="fade-up" data-aos-delay="400">
+                    Join thousands who've discovered financial freedom through our proven system. 
+                    No investment required – just your commitment to success.
                 </p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/message/CWGDGH65QCYBH1" class="cta-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        Connect on WhatsApp
+                
+                <div class="success-features" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <span>Zero Investment</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <span>Flexible Hours</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span>Unlimited Growth</span>
+                    </div>
+                </div>
+                
+                <div class="cta-action" data-aos="zoom-in" data-aos-delay="800">
+                    <a href="https://wa.me/message/CWGDGH65QCYBH1" class="success-cta-btn" target="_blank">
+                        <div class="btn-content">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="btn-text">Start Your Success Journey</span>
+                            <div class="btn-glow"></div>
+                        </div>
                     </a>
-                    <a href="contact.html" class="cta-secondary">
-                        <i class="fas fa-envelope"></i>
-                        Get in Touch
-                    </a>
+                    <p class="success-guarantee">💎 Premium Support Guaranteed</p>
+                </div>
+                
+                <div class="success-proof" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="proof-stats">
+                        <div class="proof-item">
+                            <div class="proof-number">5000+</div>
+                            <div class="proof-label">Success Stories</div>
+                        </div>
+                        <div class="proof-divider"></div>
+                        <div class="proof-item">
+                            <div class="proof-number">24/7</div>
+                            <div class="proof-label">Expert Support</div>
+                        </div>
+                        <div class="proof-divider"></div>
+                        <div class="proof-item">
+                            <div class="proof-number">100%</div>
+                            <div class="proof-label">Success Rate</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="success-background">
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+                <div class="floating-triangle triangle-1"></div>
+                <div class="floating-triangle triangle-2"></div>
+            </div>
+            <div class="gradient-overlay"></div>
         </div>
     </section>
 
@@ -295,6 +356,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

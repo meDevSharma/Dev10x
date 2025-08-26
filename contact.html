@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Dev10x - Get in Touch | Devinder Sharma</title>
     <meta name="description" content="Contact Dev10x for business opportunities, support, or questions. Connect with Devinder Sharma via WhatsApp or our contact form.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +30,7 @@
                     <a href="blog.html" class="nav-link">Blog</a>
                 </li>
             </ul>
-            <a href="index.html#whatsapp-contact" class="work-with-us-btn">Work With Us</a>
+            <a href="#whatsapp-contact" class="work-with-us-btn">Work With Us</a>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -64,7 +64,7 @@
                     </div>
                     <h3>WhatsApp (Recommended)</h3>
                     <p>Get instant responses and personalized guidance. Connect with Devinder Sharma directly for immediate support.</p>
-                    <a href="https://wa.me/message/CWGDGH65QCYBH1" class="contact-btn primary" target="_blank">
+                    <a href="#whatsapp-contact" class="contact-btn primary">
                         <i class="fab fa-whatsapp"></i>
                         Message on WhatsApp
                     </a>
@@ -87,7 +87,7 @@
                     </div>
                     <h3>Schedule a Meeting</h3>
                     <p>Book a one-on-one consultation via Google Meet or arrange an in-person meeting to discuss your business goals.</p>
-                    <a href="https://wa.me/message/CWGDGH65QCYBH1" class="contact-btn secondary" target="_blank">
+                    <a href="#whatsapp-contact" class="contact-btn secondary">
                         <i class="fas fa-calendar-alt"></i>
                         Book Meeting via WhatsApp
                     </a>
@@ -103,101 +103,20 @@
                     </div>
                 </div>
 
-                <!-- Email Contact -->
-                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Support</h3>
-                    <p>Send us detailed questions or business inquiries. We'll get back to you within 24 hours with comprehensive answers.</p>
-                    <a href="mailto:contact@dev10x.in" class="contact-btn secondary">
-                        <i class="fas fa-envelope"></i>
-                        Send Email
-                    </a>
-                    <div class="contact-features">
-                        <div class="feature">
-                            <i class="fas fa-file-alt"></i>
-                            <span>Detailed Responses</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-clock"></i>
-                            <span>24hr Response</span>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section>
-        <div class="container">
-            <div class="form-container">
-                <div class="form-header" data-aos="fade-up">
-                    <h2 class="section-title">Send Us a Message</h2>
-                    <p class="section-subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
-                </div>
-                
-                <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a topic</option>
-                            <option value="business-opportunity">Business Opportunity</option>
-                            <option value="product-inquiry">Product Inquiry</option>
-                            <option value="support">Support</option>
-                            <option value="partnership">Partnership</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Tell us about your goals, questions, or how we can help you..." required></textarea>
-                    </div>
-                    
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="newsletter" name="newsletter">
-                            <span class="checkmark"></span>
-                            I'd like to receive updates about business opportunities and success tips
-                        </label>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Contact Info Section -->
     <section class="contact-info">
         <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Dev10x</h2>
+                <p class="section-subtitle">Get to know more about our business and what we offer</p>
+            </div>
             <div class="info-grid">
                 <div class="info-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="info-icon">
@@ -238,42 +157,87 @@
         </div>
     </section>
 
-
-
-    <!-- CTA Section -->
-    <section class="contact-cta">
+    <!-- Success CTA Section -->
+    <section id="whatsapp-contact" class="success-cta">
         <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2 class="cta-title">Ready to Transform Your Life?</h2>
-                <p class="cta-subtitle">
-                    Don't wait for the perfect moment. Your journey to financial freedom starts with a simple message.
-                </p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/message/CWGDGH65QCYBH1" class="cta-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        Start Your Journey Now
-                    </a>
+            <div class="success-hero">
+                <div class="success-badge" data-aos="zoom-in">
+                    <i class="fas fa-crown"></i>
+                    <span>Your Success Awaits</span>
                 </div>
-                <div class="contact-visual">
-                    <div class="contact-stats">
-                        <div class="contact-stat">
-                            <i class="fas fa-users"></i>
-                            <span class="stat-number">5000+</span>
-                            <span class="stat-label">Happy Clients</span>
+                
+                <h2 class="success-title" data-aos="fade-up" data-aos-delay="200">
+                    <span class="title-line">Transform Your Life</span>
+                    <span class="title-highlight">One Conversation at a Time</span>
+                </h2>
+                
+                <p class="success-description" data-aos="fade-up" data-aos-delay="400">
+                    Join thousands who've discovered financial freedom through our proven system. 
+                    No investment required – just your commitment to success.
+                </p>
+                
+                <div class="success-features" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
                         </div>
-                        <div class="contact-stat">
+                        <span>Zero Investment</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
                             <i class="fas fa-clock"></i>
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Available</span>
                         </div>
-                        <div class="contact-stat">
-                            <i class="fas fa-trophy"></i>
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Success Rate</span>
+                        <span>Flexible Hours</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span>Unlimited Growth</span>
+                    </div>
+                </div>
+                
+                <div class="cta-action" data-aos="zoom-in" data-aos-delay="800">
+                    <a href="https://wa.me/message/CWGDGH65QCYBH1" class="success-cta-btn" target="_blank">
+                        <div class="btn-content">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="btn-text">Start Your Success Journey</span>
+                            <div class="btn-glow"></div>
+                        </div>
+                    </a>
+                    <p class="success-guarantee">💎 Premium Support Guaranteed</p>
+                </div>
+                
+                <div class="success-proof" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="proof-stats">
+                        <div class="proof-item">
+                            <div class="proof-number">5000+</div>
+                            <div class="proof-label">Success Stories</div>
+                        </div>
+                        <div class="proof-divider"></div>
+                        <div class="proof-item">
+                            <div class="proof-number">24/7</div>
+                            <div class="proof-label">Expert Support</div>
+                        </div>
+                        <div class="proof-divider"></div>
+                        <div class="proof-item">
+                            <div class="proof-number">100%</div>
+                            <div class="proof-label">Success Rate</div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="success-background">
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+                <div class="floating-triangle triangle-1"></div>
+                <div class="floating-triangle triangle-2"></div>
+            </div>
+            <div class="gradient-overlay"></div>
         </div>
     </section>
 
@@ -319,6 +283,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
