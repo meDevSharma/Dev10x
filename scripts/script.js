@@ -135,6 +135,21 @@ function initSmoothScrolling() {
         });
     }
 
+    // Start Your Journey button (Hero WhatsApp button) scroll to whatsapp-contact section
+    const heroWhatsAppBtn = document.querySelector('.btn.btn-primary[href="#whatsapp-contact"]');
+    if (heroWhatsAppBtn) {
+        heroWhatsAppBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.querySelector('#whatsapp-contact');
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
+
     // Start Your Journey button scroll to whatsapp-contact section
     if (startJourneyBtn) {
         startJourneyBtn.addEventListener('click', function(e) {
